@@ -1,5 +1,5 @@
-(function(){
-    'use strict';
+// (function(){
+//     'use strict';
 
 
 // Show me how to calculate the average price of all items. Please `console.log` the average.
@@ -12,7 +12,7 @@ const itemPrices = items.map(function (item) {
 })
 
 const averagePrice = (itemPrices / items.length).toFixed(2)
-console.log(`the average pricemis $${averagePrice}.`)
+console.log(`the average price is $${averagePrice}.`)
 
 //Reduce without map
 // const priceofAllItems = items.reduce(function(acc, i){
@@ -57,10 +57,10 @@ const wood = items.filter(function (item) {
 // 5. Show me how to find which items are made of eight or more materials. Please `console.log` the ones you find.
 const manyMaterials = items.filter(function (item) {
     if (item.materials.length >= 8)
-        console.log(`${item.title} has ${item.materials.length} materials`)
-        items.materials.forEach(function(material){
-            console.log(material)
-        })
+        console.log(`${item.title}`)
+        // item.materials.forEach(function(material){
+        //     console.log(material)
+        // })
 })
 
 
@@ -75,4 +75,4 @@ console.log(`${sellers.length} were made by their sellers`)
 
 // use forEach and returns instead of if/else with console.log
 
-})
+// })
